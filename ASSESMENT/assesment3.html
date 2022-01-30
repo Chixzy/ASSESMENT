@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Assesment3</h1>  
+
+    <p>Click the button to input your Name</p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <button onclick="inputName()">Click Me</button>
+
+    <script>
+        function inputName() {
+            let Name = prompt("Please enter your Name");
+                 if (Name != null) {
+                     document.getElementById("demo1").innerHTML = "Hello " + Name + ". The number of strings in your Name is: " ;
+                     document.getElementById("demo2").innerHTML = Name.length;
+                     
+                 }
+            
+        }
+    </script>
+
+
+</body>
+</html>
