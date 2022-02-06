@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verification</title>
+</head>
+<body>
+    <script>
+        let input1 = prompt("enter a number between 0 and 7")
+        let input2 = prompt("enter another number between 0 and 7" )
+        let convNum1 = Number.parseInt(input1)
+        let convNum2 = Number.parseInt(input2)
+        let sum = convNum1 + convNum2
+        // if(sum > 12){
+        //     console.log(" ERROR! /Enter a valid number") 
+        //}  
+        if(sum >= 10){
+            console.log("Special fee:")
+            console.log("36")
+        }else{
+            console.log("Regular fee")
+            console.log(sum * 2)
+        }
+    </script>
+    
+</body>
+</html>

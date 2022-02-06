@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+     let ranNum = Math.floor(Math.random() * 10)
+     console.log(ranNum)
+     let counter = 0
+     let conNum = 0
+    do {
+        let input =  prompt("Input any number");
+        convNum = Number.parseInt(input);
+        if(convNum > ranNum){
+            console.log("Guess too high. Try again");
+        }else if(convNum < ranNum){
+            console.log("Guess too low");;;
+        }else {
+            console.log(`Your guess was correct after ${counter + 1} attempts`);
+        }counter++
+        // if (ranNum = 0) {break;} 
+    } while (counter != ranNum);   
+    // for (counter = 0; ranNum != convNum; counter++){
+    //     let input =  prompt("Input any number");
+    //     let convNum = Number.parseInt(input);
+    //     if(convNum > ranNum){
+    //         console.log("Guess too high. Try again");
+    //     }else if(convNum < ranNum){
+    //         console.log("Guess too low");;;
+    //     }else {
+    //         console.log("Your guess was correct after n attempts");
+    //     }counter++
+    // } 
+    </script>
+</body>
+</html>
